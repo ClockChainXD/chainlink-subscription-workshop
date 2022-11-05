@@ -1,0 +1,210 @@
+[
+    {
+      "inputs": [
+        {
+          "internalType": "contract LinkTokenInterface",
+          "name": "_link",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "_registrar",
+          "type": "address"
+        },
+        {
+          "internalType": "contract AutomationRegistryInterface",
+          "name": "_registry",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "_odemeToken",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "previousOwner",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "newOwner",
+          "type": "address"
+        }
+      ],
+      "name": "OwnershipTransferred",
+      "type": "event"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "string",
+          "name": "name",
+          "type": "string"
+        },
+        {
+          "internalType": "uint32",
+          "name": "gasLimit",
+          "type": "uint32"
+        },
+        {
+          "internalType": "uint96",
+          "name": "amount",
+          "type": "uint96"
+        },
+        {
+          "internalType": "address",
+          "name": "anaSozlesme",
+          "type": "address"
+        }
+      ],
+      "name": "abone_ol",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "name": "abonelikler",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "baslangicTarihi",
+          "type": "uint256"
+        },
+        {
+          "internalType": "address",
+          "name": "abonmanSozlesmesi",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "upkeepId",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "adres",
+          "type": "address"
+        }
+      ],
+      "name": "get_abonelik",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "baslangicTarihi",
+          "type": "uint256"
+        },
+        {
+          "internalType": "address",
+          "name": "abonmanSozlesmesi",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "upkeepId",
+          "type": "uint256"
+        },
+        {
+          "internalType": "bool",
+          "name": "aktiflik",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "i_link",
+      "outputs": [
+        {
+          "internalType": "contract LinkTokenInterface",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "i_registry",
+      "outputs": [
+        {
+          "internalType": "contract AutomationRegistryInterface",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "owner",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "registrar",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "renounceOwnership",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "newOwner",
+          "type": "address"
+        }
+      ],
+      "name": "transferOwnership",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ]
